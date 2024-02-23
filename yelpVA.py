@@ -87,8 +87,8 @@ for link in soup.find_all('a', class_ = 'css-19v1rkv'):
 """
 import smtplib
 
-email = "bqnguyen2002@gmail.com"
-receiver_email = "mike@ptuning.com"
+email = "YOUR_EMAIL"
+receiver_email = "RECEIVER_EMAIL"
 subject = "Top 10 Restaurants in VA for " + datetime.now().strftime("%B")
 message = ('\n' + textFairfax + '\n' +textCentreville + '\n' + textVienna + '\n' + textAlexandria + '\n' + textHerndon + '\n' + textManassas + '\n' + textFallsChurch)
 text = f"Subject: {subject}\n\n{message}"
