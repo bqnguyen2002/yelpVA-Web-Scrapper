@@ -12,9 +12,6 @@ for link in soup.find_all('a', class_ = 'css-19v1rkv'):
         #print(str(count) + '. ' + link.get('name'))
         textFairfax += str(count) + '. ' + link.get('name') + '\n'
         count += 1
-for link in soup.find_all('img', class_ = 'css-xlzvdl'):
-        print(link.get('src'))
-
 
 urlCentreville = 'https://www.yelp.com/search?cflt=restaurants&find_loc=Centreville%2C+VA'
 pageCentreville = requests.get(urlCentreville)
